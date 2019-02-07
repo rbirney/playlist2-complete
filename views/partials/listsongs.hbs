@@ -1,0 +1,24 @@
+<table class="ui fixed table">
+  <thead>
+    <tr>
+      <th>Song</th>
+      <th>Artist</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each playlist.songs}}
+      <tr>
+        <td>
+          {{title}}
+        </td>
+        <td>
+          {{artist}}
+        </td>
+        <td>
+          <a href="/playlist/{{../playlist.id}}/deletesong/{{id}}" class="ui tiny red button">Delete Song</a>
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
